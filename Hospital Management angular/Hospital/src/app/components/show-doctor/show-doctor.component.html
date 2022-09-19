@@ -1,0 +1,54 @@
+
+<div class="container">
+
+    <div>
+        <form #showDoctor="ngForm" (ngSubmit)="showDoctorInfo(showDoctor)">
+            <label class="text-primary font-weight-bold mt-4">Select Doctor Name</label>
+            
+            <div class="row ml-auto">
+                
+                <mat-form-field  appearance="outline" class="mr-5">
+                    <mat-label>---name---</mat-label>
+                    <mat-select [(ngModel)] = "doctorName" name="doctorName">
+                        <mat-option *ngFor="let doctor of doctorNames" [value]="doctor">{{doctor}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <button type="submit" mat-raised-button color="primary" class="my-2">Get Doctor Info</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!--Table-->
+    <table class="table table-striped my-4" [hidden]="!dataPresent">
+        <thead class="thead-dark">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Specilization</th>
+            <th>Patients Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{doctorDetails.id}}</th>
+            <td>{{doctorDetails.name}}</td>
+            <td>{{doctorDetails.age}}</td>
+            <td>{{doctorDetails.gender}}</td>
+            <td>{{doctorDetails.specialist}}</td>
+            <td>{{doctorDetails.pcount}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <div class="row" *ngIf='errMsg!==""'>
+        <span class="alert alert-danger mx-4">{{errMsg}}</span>
+      </div>
+
+    <a routerLink="/Home">Go to HomePage</a>
+    
+</div>

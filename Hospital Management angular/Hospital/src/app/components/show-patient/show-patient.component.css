@@ -1,0 +1,57 @@
+
+table{
+    background: rgb(232, 234, 235);
+    padding: 25px;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+h2{
+    background: rgb(38, 59, 61);
+    padding: 10px;
+    color: #fff;
+    width: 500px;
+       margin-bottom: 0px;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+}
+h3{
+  
+        background: rgb(218, 92, 43);
+        padding: 10px;
+        color: #fff;
+       width: 500px;
+       margin-bottom: 0px;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+    
+}
+
+label{
+    background: rgb(232, 234, 235);
+    padding: 10px;
+}
+
+.card{
+    background-color:cornsilk;
+    width: 700px;
+    margin-left: auto;
+       margin-right: auto;
+       border-radius: 40px;
+}
+
+.table{
+    border-radius: 20px;
+    background-color: rgb(59, 55, 55);
+    color: #fff;
+    font-family: sans-serif;
+    width: 600px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.row{
+    background-color: azure;
+}

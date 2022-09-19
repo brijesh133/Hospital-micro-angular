@@ -1,0 +1,100 @@
+<div class="row">
+<div class="col-md-6 offset-md-3 mb-4">
+
+    <form #showPatient="ngForm" (ngSubmit)="onSubmit(showPatient)">
+        <div class="form-group mb-3 mt-5">
+            <label>Enter the Patient ID</label>
+            <input type="number" class="form-control" id="pid" [(ngModel)]="pid" name="pid">
+
+        </div>
+        <div class="text-center">
+            <button class="btn btn-success text-center" type="submit" 
+            >Search</button>
+        </div>
+    </form>
+</div>
+<!-- <div class="text-center" [hidden]="active">
+    <span class="alert alert-danger ">{{errMsg}}</span>
+</div>
+
+<div class="text-center" [hidden]="notFound">
+    <h3 class="notP">No Patient Found</h3>
+    
+</div>
+
+<div [hidden]="status">
+
+    <h2 class="text-center mb-5">Patient Details</h2>
+
+    <table class="table table-striped ">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Visited Doctor</th>
+                <th>Date of Visit</th>
+                <th>Prescription</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{patients.id}}</td>
+                <td>{{patients.name}}</td>
+                <td>{{patients.visitedDoc}}</td>
+                <td>{{patients.dtOfVisit}}</td>
+                <td>{{patients.prescription}}</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div> -->
+
+<div class="card text-center" [hidden]="pageActiv">
+    <div class="card-body" >
+        <div class="text-center" [hidden]="active">
+            <span class="alert alert-danger ">{{errMsg}}</span>
+        </div>
+        
+        <div class="text-center" [hidden]="notFound">
+            <h3 class="notP">No Patient Found</h3>
+            
+        </div>
+        
+        <div [hidden]="status">
+        
+            <h2 class="text-center mb-5">Patient Details</h2>
+        
+            <table class="table table-striped  ">
+        
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Visited Doctor</th>
+                        <th>Date of Visit</th>
+                        <th>Prescription</th>
+        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{patients.id}}</td>
+                        <td>{{patients.name}}</td>
+                        <td>{{patients.visitedDoc}}</td>
+                        <td>{{patients.dtOfVisit}}</td>
+                        <td>{{patients.prescription}}</td>
+        
+                    </tr>
+                </tbody>
+        
+            </table>
+        
+        </div>
+      </div>
+   
+</div>
+</div>

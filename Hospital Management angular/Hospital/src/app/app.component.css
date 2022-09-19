@@ -1,0 +1,14 @@
+img{
+    margin: 0px;
+    
+}
+
+.footer-copyright {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: azure;
+    text-align: center;
+ }

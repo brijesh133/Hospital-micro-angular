@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* body{
+  
+    font-family: sans-serif,arial,Helvetica;
+    background-image: url('./assets/lap.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+} */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+

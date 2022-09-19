@@ -1,0 +1,41 @@
+
+    <div class="col-md-6 offset-md-3 mt-4">
+        <h3 class="text-center ">Create Patient</h3>
+    
+        <form autocomplete="off" #register='ngForm' (ngSubmit)="register.valid && submit(register)">
+    
+            <div class="form-group mb-2">
+                <label>Name</label>
+                <input type="text" class="form-control" id="regno" [(ngModel)]="patient.name" name="name">
+    
+            </div>
+    
+            <div class="form-group mb-2">
+                <label>Select Visited Doctor</label><br>
+                <select class="form-select form-select-lg" aria-label=".form-select-lg example"
+                    [(ngModel)]="patient.visitedDoc" name="visitedDoc" >
+                    <option selected disabled>Select visitedDoc</option>
+                    <option *ngFor="let doc of names" [value]="doc">{{doc}}</option>
+                </select>
+            </div>
+
+
+
+            <div class="form-group mb-2">
+                <label>date</label>
+                <input type="date" class="form-control" id="name" [(ngModel)]="patient.dtOfVisit" name="dtOfVisit" placeholder="dd-mm-yyyy">
+    
+            </div>
+    
+            <div class="form-group mb-2">
+                <label>Prescription</label>
+                <input type="text" class="form-control" id="type" [(ngModel)]="patient.prescription" name="prescription">
+        
+            </div>
+    
+    
+              <div class="text-center mt-4">
+            <button class="btn btn-success " type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
